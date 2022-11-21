@@ -15,7 +15,7 @@ Javascript, HTML, CSS...
 
 ## Project Lists !!!
 
-- [@Project](https://pharouqy.github.io/Design-CSS-HTML-JS/index.html/)
+- [@Project](https://pharouqy.github.io/Design-CSS-HTML-JS/)
 
 - 3D Flip Card Effect 3
 - 3D Flip Flyer Hover Effects
