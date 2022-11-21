@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Script
+    </title>
+    <style>
+        body {
+            margin: auto 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button.in {
+            outline: none;
+            border: none;
+            width: 250px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <button type="button" class="in">Change color</button>
+    <script>
+        var colors = ['blue', 'green', 'tomato', 'yellow', 'purple'],
+            i = 1;
+        var elementToChange = document.body;
+        var x = document.querySelector(".in");
+        x.addEventListener('click', function () {
+            elementToChange.style.backgroundColor = colors[i++];
+            if (i === colors.length) {
+                i = 0;
+            }
+        });
+    </script>
+</body>
+
+</html>

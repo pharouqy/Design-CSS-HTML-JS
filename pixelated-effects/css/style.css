@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #293A88;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container {
+    position: relative;
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pixel {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: #000;
+}
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    image-rendering: pixelated;
+}
+img:last-child {
+    transition: 2s;
+}
+.pixel:hover img:last-child {
+    opacity: 0;
+}

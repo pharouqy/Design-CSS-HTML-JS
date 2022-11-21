@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Add Remove Active Class Based
+        </title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <ul>
+            <li><a href="index.html">Index</a></li>
+            <li><a href="reference.html">reference</a></li>
+            <li><a href="portfolio.html">portfolio</a></li>
+            <li><a href="service.html">service</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+        <script type="text/javascript">
+            const currentLocation = location.href;
+            const menuItem = document.querySelectorAll('a');
+            const menuLength = menuItem.length;
+            for (let i = 0; i < menuLength; i++) {
+                if (menuItem[i].href === currentLocation) {
+                    menuItem[i].className = "active"
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+#demo {
+    width: 85%;
+    margin: 150px auto 0;
+}
+.item {
+    width: 220px;
+    height: 220px;
+    background: #fff;
+    opacity: 0.5;
+    transition: 1s;
+}
+.item:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) scale(1);
+    width: 100%;
+}
+@media all and (max-width: 767px) {
+    #demo {
+        width: 100%;
+        margin: 0 auto;
+    }
+}

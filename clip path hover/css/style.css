@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #ddd;
+}
+.img-area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.a {
+    width: 650px;
+    height: 450px;
+    display: block;
+    box-shadow: 0 5px 40px rgba(0,0,0,0.6);
+}
+.img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 650px;
+    height: 450px;
+    transition: 2s;
+}
+.img:nth-child(2) {
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 0% 100%);
+}
+.a:hover .img:nth-child(2) {
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+}

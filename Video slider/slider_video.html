@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            video slider
+        </title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <!--<iframe id="slider" width="100%" height="600px" src="https://www.youtube.com/embed/xRSR-VujzBY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+        <video id="slider" autoplay muted loop>
+            <source src="video/video1.mp4" type="video/mp4">
+        </video>
+        <ul class="navigation">
+            <li><img onclick="videoUrl ('video/video1.mp4')" src="img/video1.jpg"></li>
+            <li><img onclick="videoUrl ('video/video2.mp4')" src="img/video2.jpg"></li>
+            <li><img onclick="videoUrl ('video/video3.mp4')" src="img/video3.jpg"></li>
+            <li><img onclick="videoUrl ('video/video4.mp4')" src="img/video4.jpg"></li>
+        </ul>
+        <script type="text/javascript">
+            function videoUrl (videosource) {
+                document.getElementById ("slider").src = videosource;
+            }
+        </script>
+    </body>
+</html>
